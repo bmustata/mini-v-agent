@@ -1,0 +1,144 @@
+{
+    "name": "Book preview La Galatea",
+    "nodes": [
+        {
+            "id": "textgen526581",
+            "type": "TEXT_GEN",
+            "position": {
+                "x": 384,
+                "y": 648
+            },
+            "data": {
+                "prompt": "Bold book cover with a vivid yellow background and delicate line-art of a pastoral landscape. Large white title text: \u201cLA GALATEA\u201d. Refined classical typography, poetic and elegant composition. Author name: \u201cMiguel de Cervantes\u201d.",
+                "isLoading": false,
+                "output": "Here are a few options for a Midjourney prompt, each with slightly different nuances to capture your vision:\n\n**Option 1 (Focus on directness and contrast):**\n\n```\nA bold and elegant book cover design. Vivid yellow background. Delicate, thin-line art illustration of a classical pastoral landscape: rolling hills, graceful trees, a gentle river, and a few grazing sheep. The line-art should be in a subtle dark grey or black, minimalist and refined. Large white title text: \"LA GALATEA\" in sophisticated, classic serif typography. Author name: \"Miguel de Cervantes\" in smaller white serif text below the title. Poetic and clean composition, high contrast, literary feel. --ar 2:3 --style raw\n```\n\n**Option 2 (Emphasizing the \"ethereal\" quality of the line art):**\n\n```\nBook cover art, poetic and elegant composition. Bright, vivid lemon yellow background. Centered, ethereal and delicate single-line art drawing of an idyllic pastoral scene: distant classical ruins among rolling hills, ancient trees, and a winding stream. The line-art is intricate but subtle, in a very fine charcoal grey. Prominent large white title: \"LA GALATEA\" in a refined, calligraphic serif font. Author: \"Miguel de Cervantes\" in elegant smaller white text. Graphic design, clean aesthetic. --ar 2:3 --v 5.2\n```\n\n**Option 3 (Slightly more descriptive for the landscape):**\n\n```\nStriking book cover with a luminous yellow background. A beautifully rendered, delicate line-art illustration of a pastoral landscape covers the central area: imagine an Arcadian valley with slender cypress trees, a shepherd's crook visible among distant sheep, and a sun-dappled stream. The line-art is in a refined black ink sketch style, very fine and detailed. The title \"LA GALATEA\" is presented in large, elegant white classical serif lettering. Below, the author \"Miguel de Cervantes\" in matching smaller white typography. Bold, clean, and classic design. --ar 2:3 --s 750\n```\n\n**Key elements used and why:**\n\n*   **`--ar 2:3`**: Standard book cover aspect ratio.\n*   **`--style raw`**: (Midjourney V5.2 onwards) Helps prevent Midjourney from over-stylizing and keeps the output closer to a clean graphic design.\n*   **`--v 5.2`**: (If you want to ensure a specific version, good for control).\n*   **`--s 750`**: (Stylize parameter, 750 is moderately high, can be adjusted between 0-1000 to control how \"artistic\" vs. \"literal\" the output is).\n*   **\"Vivid yellow background\" / \"Bright lemon yellow background\" / \"Luminous yellow background\"**: Different ways to prompt the specific yellow.\n*   **\"Delicate, thin-line art\" / \"Ethereal and delicate single-line art\" / \"Refined black ink sketch style, very fine and detailed\"**: Emphasizes the requested line-art style.\n*   **\"Pastoral landscape: rolling hills, graceful trees, a gentle river, and a few grazing sheep\" / \"Arcadian valley with slender cypress trees, a shepherd's crook visible among distant sheep, and a sun-dappled stream\"**: Provides specifics for the landscape.\n*   **\"Large white title text: \"LA GALATEA\" in sophisticated, classic serif typography\"**: Specifies text, color, size, and font style.\n*   **\"Author name: \"Miguel de Cervantes\" in smaller white serif text below the title\"**: Specifies author, color, size, and placement.\n*   **\"Poetic and clean composition, high contrast, literary feel\"**: Captures the overall mood and design goals.\n\nChoose the prompt that best reflects the exact nuance you're aiming for!"
+            }
+        },
+        {
+            "id": "imagegen526776",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 1008,
+                "y": 480
+            },
+            "data": {
+                "prompt": "",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "outputFormat": "JPEG",
+                "images": [],
+                "imageResources": [
+                    "3cc09453-d4fb-48c1-b71a-5850ccc787ba"
+                ]
+            }
+        },
+        {
+            "id": "imagegen526842",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 1464,
+                "y": 1104
+            },
+            "data": {
+                "prompt": "Generate a book cover with green background",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "outputFormat": "JPEG",
+                "images": [],
+                "imageResources": [
+                    "9fb5b3a2-581b-415f-8d14-2b30a84a7f87"
+                ]
+            }
+        },
+        {
+            "id": "imagegen526985",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 2112,
+                "y": 336
+            },
+            "data": {
+                "prompt": "Display in the book in \nMinimalist interior, soft spot lighting highlighting the book, contemporary retail design aesthetic.",
+                "isLoading": false,
+                "imageCount": 2,
+                "aspectRatio": "1:1",
+                "outputFormat": "JPEG",
+                "images": [],
+                "enhancePrompt": false,
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K",
+                "imageResources": [
+                    "0ccafc1b-f545-4712-a9e2-4e0739ead50c",
+                    "a02f9ea2-0363-48bf-8fc7-d9109e261e24"
+                ]
+            }
+        },
+        {
+            "id": "imagegen527013",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 2112,
+                "y": 1128
+            },
+            "data": {
+                "prompt": "Display the book in\nAn old-fashioned European coffee house. Ornate d\u00e9cor, classic wooden chairs, warm golden light, nostalgic atmosphere.",
+                "isLoading": false,
+                "imageCount": 2,
+                "aspectRatio": "1:1",
+                "outputFormat": "JPEG",
+                "images": [],
+                "enhancePrompt": false,
+                "imageResources": [
+                    "5a43e6e5-6bdc-4df4-b3f4-04e59528c01e",
+                    "87ecbf06-960e-4d2d-a146-987d000c9aef"
+                ],
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K"
+            }
+        },
+        {
+            "id": "note528974",
+            "type": "NOTE",
+            "position": {
+                "x": 144,
+                "y": 1992
+            },
+            "data": {
+                "prompt": "\u201cLa Galatea\u201d is a pastoral novel written by Miguel de Cervantes, best known later for Don Quixote. It was his first published book, released in 1585.\n\n\ud83d\udcd6 La Galatea \u2014 Overview\n\nFull title: La Galatea\nAuthor: Miguel de Cervantes\nGenre: Pastoral romance\nPublication year: 1585\nLanguage: Spanish",
+                "isLoading": false
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e309508",
+            "source": "textgen526581",
+            "sourceHandle": "output",
+            "target": "imagegen526776",
+            "targetHandle": "prompt"
+        },
+        {
+            "id": "e701776",
+            "source": "imagegen526776",
+            "sourceHandle": "image-0",
+            "target": "imagegen526842",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e688284",
+            "source": "imagegen526776",
+            "sourceHandle": "image-0",
+            "target": "imagegen526985",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e708992",
+            "source": "imagegen526842",
+            "sourceHandle": "image-0",
+            "target": "imagegen527013",
+            "targetHandle": "image"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Text gen",
+    "nodes": [
+        {
+            "id": "textgen072149",
+            "type": "TEXT_GEN",
+            "position": {
+                "x": 744,
+                "y": 360
+            },
+            "data": {
+                "prompt": "Generate a book description written by  Miguel de Cervantes.",
+                "isLoading": false
+            }
+        }
+    ],
+    "edges": []
+}

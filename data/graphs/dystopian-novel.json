@@ -1,0 +1,98 @@
+{
+    "name": "Dystopian Novel Generator",
+    "nodes": [
+        {
+            "id": "note847182",
+            "type": "NOTE",
+            "position": {
+                "x": 60,
+                "y": 80
+            },
+            "data": {
+                "prompt": "SETTING CONTEXT:\n\nThe year is 2084. The sun has not been seen in a decade due to the 'Gray Shroud'—a permanent layer of nanobot smog.\n\nSociety is divided vertically: The wealthy live above the clouds in the 'Spire', while the poor scavenge in the bioluminescent fungus jungles of the 'Undercity'.",
+                "isLoading": false
+            }
+        },
+        {
+            "id": "note456789",
+            "type": "NOTE",
+            "position": {
+                "x": 48,
+                "y": 456
+            },
+            "data": {
+                "prompt": "CHARACTER PROFILE:\n\nName: Jax\nOccupation: Memory Broker\n\nJax extracts memories from the deceased to sell to the rich who have grown bored of their own perfect lives.\n\nConflict: He just extracted a memory that shows the Gray Shroud was intentional, not accidental.",
+                "isLoading": false
+            }
+        },
+        {
+            "id": "textgen789012",
+            "type": "TEXT_GEN",
+            "position": {
+                "x": 500,
+                "y": 200
+            },
+            "data": {
+                "isLoading": false,
+                "prompt": "Write a gripping opening scene for a novel based on the provided Setting and Character notes.\n\nStart with Jax performing an extraction in the Undercity. Focus on the contrast between the neon fungus and the rusty machinery.",
+                "enhancePrompt": true,
+                "output": "The world was a thrumming, humid breath against Jax’s skin, a symphony of decay and desperate life. A thin film of moisture clung to his exposed forearms, slicking the worn leather of his bio-drains. The air itself was a heavy, intoxicating blend: the sweet, earthy musk of bioluminescent fungi, the acrid bite of ozone from forgotten electrical conduits, and the ever-present, cloying tang of stale blood and corrosion. He hunched over the deceased, a woman whose name he hadn’t bothered to learn, her face slack in the eerie, shifting light of the Undercity.\n\nPulsating neon fungi, fat and luminous as bloated organs, cast a sickly violet glow across the corrugated metal walls of the derelict cargo container that served as his temporary clinic. Shimmering spore clouds, disturbed by the slightest draft, drifted like spectral jellyfish, catching the light and scattering it into kaleidoscopic motes. Beyond the container’s gaping maw, colossal, rusting hulks of forgotten deep-earth drills clawed at the cavern ceiling, their sheer scale a testament to an ambition long since abandoned and swallowed by grime and encroaching flora. The distant, muffled groan of settling infrastructure was a constant lullaby, punctuated by the scuttling of unseen creatures in the shadowed crevices.\n\nJax ignored it all. His focus was absolute, his fingers dancing with practiced, almost ritualistic precision. The neural interface, a spiderweb of fine silver filaments, was already embedded in the woman’s temporal lobe, a shimmering conduit linking her silent brain to his own. He adjusted the gain on the bio-drains, feeling the faint, electrical hum as they began to draw subtle currents, not life, but echoes of it. This was his trade, his penance, his cursed gift: sifting through the dregs of consciousness, extracting the final, most valuable fragments before the dark claimed them entirely.\n\nHe usually felt nothing – a detached observer plundering memory banks. But tonight, a subtle tremor ran through him. The woman’s final moments, typically a torrent of fear or regret, were strangely muted, laced with a bitter resentment he couldn't immediately decipher. He delved deeper, coaxing the fragments, navigating the decaying pathways of her mind. A child’s laugh, the warmth of a long-lost embrace, the dull ache of hunger – the usual detritus of a short, hard life in the Undercity.\n\nThen, a flicker. A memory not of personal despair, but of chilling, deliberate intent. It wasn’t a flash, but a slow, agonizing revelation, like watching a flower unfold in reverse. He saw a sterile, clinical room, utterly alien to the grime of their world. Figures in pristine white, their faces obscured. A cold, detached voice echoing, devoid of remorse, talking about \"systemic recalibration\" and \"population control.\" A schematic of the Undercity, overlaid with shimmering, blue-green energy fields. And then, the sickening realization coalesced: the Gray Shroud, the toxic atmospheric phenomenon that choked their skies and poisoned the surface, that had been sold as a catastrophic, unpredictable accident, was meticulously, *intentionally* deployed.\n\nJax recoiled, a visceral jolt that threatened to rip the delicate interface free. The humid air suddenly felt suffocating, the bioluminescence a mocking, infernal glow. His breath hitched. It wasn't an accident. *They did this*. The pragmatism that usually shielded him shattered, replaced by a cold, burning horror. The memories, now tainted with this truth, pulsed with an unbearable weight. He hadn't just extracted a memory; he'd unearthed a world-altering betrayal, a crime of unimaginable scale. The bio-drains hummed, the woman's silent indignation screaming through him. What in the blighted hells was he supposed to do with this? The weight of a secret that could tear their broken world apart settled on his shoulders, heavy and cold as a tombstone."
+            }
+        },
+        {
+            "id": "imagegen012345",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 920,
+                "y": 200
+            },
+            "data": {
+                "prompt": "Cyberpunk undercity, bioluminescent fungus jungle growing over rusty skyscrapers, neon lights, cinematic fog, dystopian atmosphere",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "16:9",
+                "outputFormat": "JPEG",
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K",
+                "imageResources": [
+                    "39028b8a-af83-49df-9299-c526d2b49131"
+                ]
+            }
+        },
+        {
+            "id": "note345678",
+            "type": "NOTE",
+            "position": {
+                "x": -312,
+                "y": 768
+            },
+            "data": {
+                "prompt": "Multi-Input Workflow:\n\nThis sample demonstrates connecting multiple nodes to a single Text Generator.\n\nBoth the 'Setting' and 'Character' notes are connected to the Text Generator's input. mini-v-agent combines them automatically to provide full context for the story generation.",
+                "isLoading": false
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e221599",
+            "source": "note847182",
+            "sourceHandle": "prompt",
+            "target": "textgen789012",
+            "targetHandle": "prompt"
+        },
+        {
+            "id": "e622624",
+            "source": "note456789",
+            "sourceHandle": "prompt",
+            "target": "textgen789012",
+            "targetHandle": "prompt"
+        },
+        {
+            "id": "e662464",
+            "source": "textgen789012",
+            "sourceHandle": "output",
+            "target": "imagegen012345",
+            "targetHandle": "prompt"
+        }
+    ]
+}

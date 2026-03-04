@@ -1,0 +1,136 @@
+{
+    "name": "Armchair Material Variations",
+    "nodes": [
+        {
+            "id": "imgsrc182947",
+            "type": "IMAGE_SOURCE",
+            "position": {
+                "x": -96,
+                "y": 144
+            },
+            "data": {
+                "prompt": "",
+                "isLoading": false,
+                "imageInput": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1258&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "imageInputType": "URL"
+            }
+        },
+        {
+            "id": "imagegen456123",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 450,
+                "y": 150
+            },
+            "data": {
+                "prompt": "keep only the armchair",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "outputFormat": "PNG",
+                "imageResources": [
+                    "b16d3066-4e2c-42ef-b20d-54f5c816dec5"
+                ]
+            }
+        },
+        {
+            "id": "note789012",
+            "type": "NOTE",
+            "position": {
+                "x": -264,
+                "y": 696
+            },
+            "data": {
+                "prompt": "Sequential Editing Workflow:\n\n1. Source Image: Raw photo of an armchair.\n2. Clean Up: Gemini removes the background to isolate the subject.\n3. Variations: The isolated image is passed to the next nodes to generate material/style variations while preserving the shape.",
+                "isLoading": false
+            }
+        },
+        {
+            "id": "imagegen012345",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 1176,
+                "y": -96
+            },
+            "data": {
+                "prompt": "a modern wood cladding room environment, interior design",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K",
+                "imageResources": [
+                    "7c8e580d-d801-4baf-ba60-b3229a0a7891"
+                ]
+            }
+        },
+        {
+            "id": "imagegen345678",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 1656,
+                "y": 384
+            },
+            "data": {
+                "prompt": "an industrial metal cladding room environment, interior design",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K",
+                "imageResources": [
+                    "87c6902c-db14-48b9-bea4-7bbac869faeb"
+                ]
+            }
+        },
+        {
+            "id": "imagegen678901",
+            "type": "IMAGE_GEN",
+            "position": {
+                "x": 2184,
+                "y": 792
+            },
+            "data": {
+                "prompt": "a rustic stone cladding room environment, interior design",
+                "isLoading": false,
+                "imageCount": 1,
+                "aspectRatio": "1:1",
+                "model": "gemini-3-pro-image-preview",
+                "preset": "1K",
+                "imageResources": [
+                    "3426e652-f3de-423b-b924-157aefa9321f"
+                ]
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e153397",
+            "source": "imgsrc182947",
+            "sourceHandle": "image",
+            "target": "imagegen456123",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e955790",
+            "source": "imagegen456123",
+            "sourceHandle": "image-0",
+            "target": "imagegen012345",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e827832",
+            "source": "imagegen456123",
+            "sourceHandle": "image-0",
+            "target": "imagegen345678",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e158749",
+            "source": "imagegen456123",
+            "sourceHandle": "image-0",
+            "target": "imagegen678901",
+            "targetHandle": "image"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "name": "Vision Analysis Demo",
+    "nodes": [
+        {
+            "id": "imgsrc601123",
+            "type": "IMAGE_SOURCE",
+            "position": {
+                "x": 60,
+                "y": 100
+            },
+            "data": {
+                "prompt": "",
+                "isLoading": false,
+                "imageInput": "https://images.unsplash.com/photo-1621428047980-d773eb8b5f59?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "imageInputType": "URL"
+            }
+        },
+        {
+            "id": "vision456789",
+            "type": "IMAGE_TO_TEXT",
+            "position": {
+                "x": 504,
+                "y": 336
+            },
+            "data": {
+                "prompt": "Describe this image in a few sentences",
+                "isLoading": false
+            }
+        },
+        {
+            "id": "textgen789012",
+            "type": "TEXT_GEN",
+            "position": {
+                "x": 1032,
+                "y": 144
+            },
+            "data": {
+                "prompt": "Based on the description of the image, generate 3 creative alternative concepts for this environment. \n\nFocus on adding sci-fi elements or a fantasy twist.",
+                "isLoading": false,
+                "enhancePrompt": false
+            }
+        },
+        {
+            "id": "note012345",
+            "type": "NOTE",
+            "position": {
+                "x": -120,
+                "y": 528
+            },
+            "data": {
+                "prompt": "Vision Workflow:\n\n1. The Image Source (Cyan) loads an image from a URL.\n2. The Vision Node (Blue) receives the image and generates a text description.\n3. The Text Node (Orange) takes that description to imagine creative alternatives.",
+                "isLoading": false
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e563462",
+            "source": "imgsrc601123",
+            "target": "vision456789",
+            "sourceHandle": "image",
+            "targetHandle": "image"
+        },
+        {
+            "id": "e917700",
+            "source": "vision456789",
+            "target": "textgen789012",
+            "sourceHandle": "output",
+            "targetHandle": "prompt"
+        }
+    ]
+}
