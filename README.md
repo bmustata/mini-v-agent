@@ -2,6 +2,8 @@
 
 A node-based generative AI workspace supporting text and image generation using modern AI models.
 
+[![Known Vulnerabilities](https://snyk.io/test/github/bmustata/mini-v-agent/badge.svg)](https://snyk.io/test/github/bmustata/mini-v-agent)
+
 ![MiniVAgent Screenshot](docs/screenshots/mini-v-agent-v1.png)
 
 The platform acts as an experimentation environment for:
