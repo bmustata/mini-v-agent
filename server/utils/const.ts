@@ -3,11 +3,12 @@ import { logger } from './logger.ts'
 
 const imagegen = true
 
-// Model constants
+// Model constants — the first entry in each category is the default model
 export const MODELS = {
     TEXT: [
         { name: 'Gemini Flash 2.5', model: 'gemini-2.5-flash', options: {} },
-        { name: 'Gemini Flash 3', model: 'gemini-3-flash-preview', options: {} }
+        { name: 'Gemini Flash 3', model: 'gemini-3-flash-preview', options: {} },
+        { name: 'Gemini Flash 3.1 Lite', model: 'gemini-3.1-flash-lite-preview', options: {} }
     ],
     IMAGE: [
         { name: 'Nano Banana 1 (2.5 Flash)', model: 'gemini-2.5-flash-image', options: {} },
