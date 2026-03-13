@@ -20,7 +20,7 @@
         "test:coverage": "vitest run --coverage"
     },
     "dependencies": {
-        "@google/genai": "^1.44.0",
+        "@google/genai": "^1.45.0",
         "axios": "^1.13.6",
         "dotenv": "^17.3.1",
         "express": "^5.2.1",
@@ -37,15 +37,15 @@
     "devDependencies": {
         "@types/express": "^5.0.6",
         "@types/multer": "^2.1.0",
-        "@types/node": "^25.3.5",
+        "@types/node": "^25.5.0",
         "@types/supertest": "^7.2.0",
         "@types/uuid": "^11.0.0",
-        "@vitejs/plugin-react": "^5.1.4",
-        "@vitest/coverage-v8": "^4.0.18",
+        "@vitejs/plugin-react": "^6.0.0",
+        "@vitest/coverage-v8": "^4.1.0",
         "concurrently": "^9.2.1",
         "supertest": "^7.2.2",
         "typescript": "~5.9.3",
-        "vite": "^7.3.1",
-        "vitest": "^4.0.18"
+        "vite": "^8.0.0",
+        "vitest": "^4.1.0"
     }
 }
